@@ -1,0 +1,1617 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 Dec, 2015, 5:36:19 PM
+    Author     : ahextech
+*/
+
+/*============================================================================
+                     Font Family Style For the Application
+=============================================================================*/
+
+/*--  HelveticaNeue Medium  --*/
+@font-face {
+    font-family: "HelveticaNeue-Medium";
+    src: url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot");
+    src: url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.woff") format("woff"),
+        url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf") format("truetype"),
+        url("../fonts/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#roboto-regular") format("svg"); 
+}
+/*--  Lato Regular  --*/
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/Lato-Regular/Lato-Regular.eot");
+    src: url("../fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff"),
+        url("../fonts/Lato-Regular/Lato-Regular.ttf") format("truetype"),
+        url("../fonts/Lato-Regular/Lato-Regular.svg#roboto-regular") format("svg"); 
+}
+
+/*--  Bebas --*/
+@font-face {
+    font-family:"Bebas";
+    src: url("../fonts/Bebas/Bebas.eot");
+    src: url("../fonts/Bebas/Bebas.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Bebas/Bebas.woff") format("woff"),
+        url("../fonts/Bebas/Bebas.ttf") format("truetype"),
+        url("../fonts/Bebas/Bebas.svg#roboto-regular") format("svg"); 
+
+}
+
+/*--  Bebas Neue  --*/
+@font-face {
+    font-family:"BebasNeue";
+    src: url("../fonts/BebasNeue/BebasNeue.eot");
+    src: url("../fonts/BebasNeue/BebasNeue.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/BebasNeue/BebasNeue.woff") format("woff"),
+        url("../fonts/BebasNeue/BebasNeue.ttf") format("truetype"),
+        url("../fonts/BebasNeue/BebasNeue.svg#roboto-regular") format("svg"); 
+
+}
+
+
+/*============================================================================
+                     Common Style For the Application
+=============================================================================*/
+body{
+    padding: 0;
+}
+*{
+    outline: none !important;
+}
+.relative{
+    position: relative;
+}
+.pad0{
+    padding: 0; 
+}
+.padL0{
+    padding-left: 0;
+}
+.mar0{
+    margin: 0;
+}
+.marT-10{
+    margin-top: 10px;
+}
+.btn-custom{
+    background-color: #ff0033;
+    color: #fff;
+    height: 50px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    -webkit-box-shadow: inset 0 -2px 0 0 rgba(2,2,2,0.25), 0 4px 4px 0 rgba(2,2,2,0.25);
+    -moz-box-shadow: inset 0 -2px 0 0 rgba(2,2,2,0.25), 0 4px 4px 0 rgba(2,2,2,0.25);
+    box-shadow: inset 0 -2px 0 0 rgba(2,2,2,0.25), 0 4px 4px 0 rgba(2,2,2,0.25);
+}
+.btn-custom:hover, 
+.btn-custom:focus,
+.btn-custom:active{
+    color: #fff;
+    background-color: #ff0033;
+}
+.btn.active, .btn:active{
+    box-shadow: none;
+}
+select.custom-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    min-height: initial;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #fdfdfd 16%, #ededed 82%, #ebebeb 100%); 
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#fdfdfd 16%,#ededed 82%,#ebebeb 100%); 
+    background: linear-gradient(to bottom,  #ffffff 0%,#fdfdfd 16%,#ededed 82%,#ebebeb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); 
+}
+.custom-select-wrapper{
+    position: relative;
+}
+.custom-select-wrapper .fa{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+/*============================================================================
+                     Main Wrapper Style For the Application
+=============================================================================*/
+.main-wrapper{
+    padding: 60px 0;
+}
+.main-wrapper .sign-up-wrapper {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+}
+.main-wrapper .logo-wrapper{
+    margin: 0 auto;
+    display: block;
+}
+.main-wrapper .sign-up-wrapper h3{
+    font-family:Bebas, sans-seriff;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FF6C8A;
+    line-height: 30px;
+    margin: 30px 0 15px 0;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px;
+    color: #333;
+    display: inline-block;
+}
+.main-wrapper .sign-up-wrapper p{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: #333333;
+}
+
+.form-group{
+    text-align: left;
+}
+.form-group label{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #666666;
+    line-height: 25px;
+}
+.form-control.custom-input{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.025);
+    min-height: 47px;
+    border: 1px solid #d6d6d6;
+}
+.form-control.custom-input::-webkit-input-placeholder {
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-control.custom-input:-moz-placeholder { /* Firefox 18- */
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+}
+
+.form-control.custom-input::-moz-placeholder {  /* Firefox 19+ */
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+}
+.form-control.custom-input:-ms-input-placeholder {  
+    color: #cccccc;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px; 
+}
+.main-wrapper .btn-custom{
+    margin: 50px auto 70px;
+    width: 100%;
+    max-width: 180px;
+}
+.main-wrapper p.have-account{
+    color: #333333;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 14px; 
+}
+.main-wrapper p.have-account a{
+    color: #ff0033;
+    display: block;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px; 
+}
+.main-wrapper .partner-wrapper{
+    background: url("../images/main-img.png") no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    margin: 100px 0;
+}
+.main-wrapper .partner-wrapper .partner-inner-wrapper{
+    border: 3px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    display: inline-block;
+    left: 50%;
+    max-width: 115px;
+    padding: 10px 0 10px 8px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.main-wrapper .partner-wrapper .partner-inner-wrapper h1{
+    margin: 0;
+}
+.main-wrapper .partner-wrapper .partner-inner-wrapper span{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+} 
+.main-wrapper .partner-wrapper .partner-inner-wrapper h1 span{
+    font-family: Bebas,sans-seriff;
+    font-size: 65px;
+    letter-spacing: 5px;
+    line-height: 56px;
+    text-align: center;
+}
+.main-wrapper .partner-wrapper .partner-inner-wrapper h1 span:nth-child(1){
+    font-size: 70px;
+}
+.main-wrapper .partner-wrapper .partner-inner-wrapper h1 span:nth-child(2){
+    font-size: 75px;
+    line-height: 70px;
+}
+.main-wrapper .sign-up-wrapper a.show-hide{
+    color: #999999;
+    font-size: 14px;
+    line-height: 30px;
+    position: absolute;
+    right: 12px;
+    text-align: center;
+    text-decoration: none;
+    top: 39px;
+    width: 20px;
+}
+.mail-send-wrapper {
+    display: none;
+}
+.mail-send-wrapper p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    line-height: 25px;
+}
+.mail-send-wrapper img{
+    margin: 50px auto 35px;
+}
+.mail-send-wrapper .btn-custom {
+    margin: 30px auto 20px;
+    width: 100%;
+    max-width: 180px;
+}
+
+/*============================================================================
+                     Account Details Style For the Application
+=============================================================================*/
+.account-details-wrapper{
+    padding: 15px; 
+}
+.account-details-wrapper .nav-tabs {
+    border-bottom: none;
+    margin-top: 15px;
+}
+.account-details-wrapper .nav-tabs > li{
+    text-align: center;
+    margin: 0;
+    width: 22%;
+}
+.account-details-wrapper .nav-tabs > li:nth-child(2):before{
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 2px solid #e9e9e9;
+    border-top: 3px solid #e9e9e9;
+    content: "";
+    height: 11px;
+    left: -37%;
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 74%;
+    z-index: 999;
+}
+.account-details-wrapper .nav-tabs > li:nth-child(2):after{
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 2px solid #e9e9e9;
+    border-top: 3px solid #e9e9e9;
+    content: "";
+    height: 11px;
+    right: -37%;
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 74%;
+    z-index: 999;;
+}
+.account-details-wrapper .nav-tabs > li span{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
+    color: #cccccc;
+}
+.account-details-wrapper .nav-tabs > li > a{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: #cccccc;
+    border-radius: 50%;
+    border: 2px solid #F4F4F4;
+    height: 50px;
+    width: 50px;
+    line-height: 28px;
+    margin: 0 auto 10px;
+}
+.account-details-wrapper .nav-tabs > li:after{
+    border-top: 2px solid #F4F4F4;
+    position: absolute;
+}
+.account-details-wrapper .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+    border-color: #ddd; 
+    color: #fff;
+    background-color: #00CC66;
+}
+.account-details-wrapper .tab-content h2 {
+    font-family: Bebas,sans-seriff;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 60px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 5px;
+}
+.account-details-wrapper .tab-content p {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #999999; 
+}
+.account-details-wrapper .tab-content h2  .horizontal-border{
+    border-bottom: 1px solid #ff0033;
+    display: block;
+    margin: 20px auto 15px;
+    width: 105px;
+}
+.upload-photo-wrapper{
+    background-color: #f2f2f2;
+    border: 2px dashed #cccccc;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+    margin: 20px 0;
+}
+.upload-photo-wrapper i{
+    color: #cccccc;
+    font-size: 90px;
+    margin-top: 65px;
+}
+.upload-photo-wrapper h4{
+    color: #666666;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 27px;
+}
+.upload-photo-wrapper p{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    font-weight: bold;
+    color:  #C9C9C9;
+}
+.upload-photo-wrapper .btn-custom{
+    border-radius: 4px;
+    box-shadow: 0 -1px 0 0 rgba(2, 2, 2, 0.25) inset, 0 1px 0 0 rgba(2, 2, 2, 0.1);
+    color: #ffffff;
+    cursor: pointer;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    height: 25px;
+    margin-top: 5px;
+    min-width: 110px;
+    padding: 2px;
+}
+.upload-photo-wrapper input[type="file"] {
+    display: none;
+}
+.upload-photo-wrapper .upload-profile-photo{
+    background-color: #404040;
+    border: 3px solid #fff;
+    border-radius: 4px;
+    bottom: -38px;
+    height: 160px;
+    left: 20px;
+    padding: 30px 5px 5px;
+    position: absolute;
+    text-align: center;
+    width: 165px;
+}
+.upload-photo-wrapper .upload-profile-photo i{
+    font-size:30px;
+    margin-top: 0;
+    color:  #cbcbcb;                                                                
+}
+.upload-photo-wrapper .upload-profile-photo p{
+    color: #cccccc;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 17px 0;
+}
+.upload-photo-wrapper .upload-profile-photo .btn{
+    background-color: #a0a0a0;
+    border-color: #a0a0a0;
+    border-radius: 2px;
+    color: #333333;
+    font-family: "Roboto",sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    height: 25px;
+    margin: 0 auto;
+    padding: 3px 0;
+    width: 110px;
+}
+.account-details-wrapper label{
+    font-family: HelveticaNeue-Medium, sans-serif;
+    font-size: 14px;
+    color:  #666666;
+}
+.account-details-wrapper label span{
+    color:  #999999;
+}
+.personal-details-wrapper {
+    border-bottom: 1px solid #cccccc;
+    margin: 80px auto 50px;
+    padding-bottom: 30px;
+    width: 80%;
+}
+.personal-details-wrapper  h3{
+    font-family:Bebas, sans-seriff;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 40px;
+    color: #333;
+    display: inline-block;
+    margin-top: 13px; 
+}
+.social-details-wrapper h3{
+    color: #333333;
+    font-family: Bebas,sans-seriff;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.personal-details-wrapper form .form-group{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #878787;
+    text-align: left;
+}
+.personal-details-wrapper .form-control.custom-select{
+    min-height: 47px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #333333;
+    font-size: 14px;
+}
+.social-details-wrapper{
+    border-bottom: none;
+    text-align: left;
+    width: 80%;
+    padding-bottom: 10px;
+    margin: 0 auto;  
+}
+.social-details-wrapper i{
+    font-size: 14px;
+    position: absolute;
+    right: 15px;
+    top: 48px;
+}
+.social-details-wrapper .fa-facebook{
+    color: #03369A;
+}
+.social-details-wrapper .fa-twitter{
+    color: #069CFF;
+}
+.social-details-wrapper .fa-pinterest{
+    color: #BD2126;
+}
+.btn.action-button{
+    margin-top: 20px;
+    min-width: 180px;
+    float: right;
+    margin-left: 10px;
+}
+/*============================================================================
+                         Top Tab Style For the Application
+=============================================================================*/
+
+/*form styles*/
+#msform {
+    position: relative;
+}
+#msform ul li{
+    text-align: center;    
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+
+/*progressbar*/
+#progressbar {
+    counter-reset: step;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-top: 10px;
+}
+#progressbar li {
+    float: left;
+    list-style-type: none;
+    position: relative;
+    width: 33.33%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #999999;
+}
+#progressbar li.active{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #666666;
+}
+
+#progressbar li:before {
+    background: white none repeat scroll 0 0;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    color: #333333;
+    content: counter(step, decimal);
+    counter-increment: step;
+    display: block;
+    font-size: 14px;
+    height: 45px;
+    line-height: 44px;
+    margin: 0 auto 5px;
+    width: 45px;
+    box-shadow: 0 -2px 0 0 rgba(2, 2, 2, 0.25) inset, 0 0 4px 0 rgba(2, 2, 2, 0.25);
+}
+/*progressbar connectors*/
+#progressbar li:after {
+    background: white none repeat scroll 0 0;
+    content: "";
+    height: 8px;
+    left: -50%;
+    position: absolute;
+    top: 18px;
+    width: 100%;
+    z-index: -1;
+}
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li:before,  #progressbar li:after{
+    background: #fff;
+    box-shadow: 0 0px 0 0 rgba(2, 2, 2, 0.25) inset, 0 0 4px 0 rgba(2, 2, 2, 0.25);
+    color: #333;
+}
+#progressbar li.active:before,  #progressbar li.active:after{
+    background: #27AE60;
+    color: white;
+}
+/*============================================================================
+                    Add Items Style For the Application
+=============================================================================*/
+.add-items-wrapper{
+    padding: 0;
+}
+.add-items-wrapper h2 .horizontal-border{
+    border-bottom: 2px solid #FF6C8A;
+    display: block;
+    width: 100px;
+}
+.add-item-banner-wrapper{
+    background: url("../images/bg.jpg") no-repeat;
+    height: 300px;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    margin: 30px 0;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper{
+    bottom: -155px;
+    height: 248px;
+    padding:0 20px;
+    position: absolute;
+    width: 100%;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper h4{
+    font-size: 24px;    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper h4:nth-of-type(2){
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+    margin-top: 60px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper p,
+.add-item-banner-wrapper .add-item-banner-inner-wrapper p a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper p:first-of-type{
+    margin-top: 5px;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper p:first-of-type a{
+    text-decoration: none;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper p:nth-of-type(2){
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333333; 
+    line-height: 22px;
+    margin-bottom: 22px;
+    text-align: justify;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper .social-wrapper{
+    margin: 0;
+    display: inline-block;
+}
+.social-wrapper li{
+    padding-left: 0;
+}
+.social-wrapper li a .fa{
+    font-size: 40px;
+}
+.social-wrapper li a 
+.fa-facebook-square{
+    color: #20295A;
+}
+.social-wrapper li a .fa-twitter-square{
+    color: #369CD5;
+}
+.social-wrapper li a .fa-pinterest-square{
+    color: #F30430;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper img{
+    border-radius: 0;
+    display: block;
+    margin: 0 0 0 auto;
+    padding: 3px;
+}
+.add-item-banner-wrapper .add-item-banner-inner-wrapper .btn{
+    border: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-transform: uppercase;
+    line-height: 30px;
+    height: 40px;
+    padding: 6px 15px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.add-frame-wrapper{
+    margin: 0 auto;
+    padding: 175px 0 0;
+    padding: 175px 0 0;    
+}  
+.add-frame-wrapper .form-group input{
+    min-width: 280px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+.add-frame-wrapper .form-group input::-webkit-input-placeholder {
+    color: #666666;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+}
+.add-frame-wrapper .form-group input:-moz-placeholder { /* Firefox 18- */
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px; 
+}
+
+.add-frame-wrapper .form-group input::-moz-placeholder {  /* Firefox 19+ */
+    color: #666666;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+}
+.add-frame-wrapper .form-group input:-ms-input-placeholder {  
+    color: #666666;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px; 
+}
+.add-frame-wrapper .form-group{
+    position: relative;
+    float: right;
+}  
+.add-frame-wrapper .form-group .fa{
+    font-size: 16px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.add-frame-wrapper .form-group a{
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    right: 14px;
+    text-decoration: none;
+    top: 12px;
+}  
+
+.add-frame-wrapper .add-frames{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border: 1px dashed #cccccc;
+    margin: 0 auto;
+    min-height: 320px;
+    width: 300px;
+    padding: 80px 40px 30px;
+    margin: 0 auto 30px;
+}
+.add-frame-wrapper .add-frames .btn{
+    border: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    }
+.add-frame-wrapper .add-frames img{
+    display: block;
+    margin: 0 auto 20px;
+}
+.add-frame-wrapper .add-frames .btn-custom{
+    display: block;
+    height: 25px;
+    margin: 0 auto;
+    padding: 0;
+    width: 110px;
+}
+
+.add-frame-wrapper .add-frames span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: #cccccc;
+    display: block;
+    margin-bottom: 6px;
+}
+.add-frame-wrapper .frame-wrapper .dropdown{
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+.add-frame-wrapper .frame-wrapper .dropdown .btn{
+    border: none;
+    background-color: transparent;
+}
+.add-frame-wrapper .frame-wrapper .dropdown .dropdown-menu{
+    left: -140px;
+}
+.add-frame-wrapper .frame-wrapper h4 span{
+    display: block;
+    color: #b1b1b1;
+}
+.add-frame-wrapper .frame-wrapper p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #393939;
+    padding: 0 5px;
+}
+.add-frame-wrapper .frame-wrapper p span{
+    display: inline-block;
+    color: #b1b1b1;
+    float: left;
+}
+.add-frame-wrapper .frame-wrapper h4 a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #393939;
+}
+
+/*=============================================================================
+                  Profie Wrapper Style For the Application
+=============================================================================*/
+.profile-wrapper{
+    padding-top: 15px;
+}
+.edit-profile{
+    background-color: #F1F1F1;
+    padding: 10px;
+    margin-top: -15px;
+}
+.edit-profile h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-right: 1px solid #909090;
+    font-size: 14px;
+    color: #393939;
+    margin: 8px 0;
+    text-align: left;
+}
+.edit-profile h4 span{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #909090;
+    display: block;
+}
+.edit-profile .dropdown .btn{
+    padding: 2px 5px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 22px;
+    border: 0;
+    background-color: transparent;
+}
+.edit-profile .dropdown{
+    border: 0;
+}
+.edit-profile img{
+    height: 50px;
+    width: 50px;
+    border-radius: 6px;
+    border: 2px solid #ddd;
+}
+.profile-wrapper .nav.nav-tabs{
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 4px;
+    min-width: 200px;
+}
+.profile-wrapper .nav-tabs > li{
+    text-align: center;
+    margin: 0;
+    min-height: 30px;
+}
+.profile-wrapper .nav-tabs > li:first-of-type{
+    padding-right: 4px;
+}
+.nav > li > a {
+    font-family: "Roboto";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666666;
+    height: 45px;
+    min-width: 140px;
+    line-height: 32px;
+    border-radius: 4px;
+    display: block;
+    padding: 6px 15px;
+    position: relative;
+    margin-right: 0;
+    border: 0;
+}
+.profile-wrapper .nav-tabs > li.active > a, .profile-wrapper .nav-tabs > li.active > a:focus, .profile-wrapper .nav-tabs > li.active > a:hover{
+    border: 0; 
+}
+.profile-wrapper .nav-tabs > li.active > a, 
+.profile-wrapper .nav-tabs > li.active > a:focus, 
+.profile-wrapper .nav-tabs > li.active > a:hover{
+    border-color: #ddd; 
+    color: #fff;
+    background-color: #FD0134;
+}
+.add-items-wrapper
+.frame-wrapper{
+    min-height: 310px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto 30px;
+}
+.img-counter{
+    background-color: #ff0033;
+    border-radius: 20px;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+.img-counter .fa{
+    font-size: 17px;
+    margin-right: 5px;
+}
+.img-counter span{
+    font-size: 16px;
+}
+.frame-wrapper .dropdown{
+    font-size: 20px;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+.frame-wrapper .dropdown .btn.active, .btn:active{
+    box-shadow: none;
+}
+.frame-wrapper .dropdown .dropdown-menu:after, .dropdown .dropdown-menu:before,
+.edit-profile .dropdown .dropdown-menu:after, .dropdown .dropdown-menu:before{
+    bottom: 100%;
+    right: 10px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.frame-wrapper .dropdown .dropdown-menu:after,
+.edit-profile .dropdown .dropdown-menu:after{
+    border-color: rgba(0, 0, 0, 0) ;
+    border-bottom-color: #fff;
+    border-width: 8px;
+    margin-left: 58px;
+}
+.frame-wrapper .dropdown .dropdown-menu:before,
+.edit-profile .dropdown .dropdown-menu:before{
+    border-color: rgba(0, 0, 0, 0) ;
+    border-bottom-color: #ddd;
+    border-width: 10px;
+    right: 8px;
+}
+.frame-wrapper .dropdown .dropdown-menu li{
+    margin: 0;
+}
+.frame-wrapper .dropdown .dropdown-menu li a{
+    padding: 12px 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+.edit-profile .dropdown .dropdown-menu > li > a{
+    padding: 15px 20px;
+}
+.frame-wrapper .dropdown .btn{
+    border-color:transparent;
+    border: none;
+    background-color: transparent;
+}
+.frame-wrapper .dropdown .dropdown-menu,
+.edit-profile .dropdown .dropdown-menu{
+    left: -166px;
+    min-width: 200px;
+    top: 35px;
+}
+.frame-wrapper img{
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    display: block;
+    height: 220px;
+    width: 100%;
+    margin-bottom: 0;
+}
+.frame-wrapper .frame-banner-wrapper{
+    position: relative;
+}
+.frame-wrapper .frame-banner-wrapper .btn{
+    border: 0;
+    background-color: #fff;
+    color: #333;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    border-bottom: none;
+    box-shadow: none;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+.frame-wrapper .frame-banner-wrapper:hover .btn{
+    opacity: 1;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.frame-wrapper .frame-banner-wrapper .btn:hover{
+    background-color: #fff;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #333;
+}
+.frame-wrapper h4{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    padding: 15px 5px;
+}
+.frame-wrapper p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    color: #393939;
+    padding: 0 5px;
+}
+.frame-wrapper p span{
+    display: inline-block;
+    color: #b1b1b1;
+    float: left;
+}
+.frame-wrapper h4 a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #393939;
+}
+.frame-wrapper .frame-describtion-wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.frame-wrapper .frame-describtion-wrapper .quality-wrapper,
+.frame-wrapper .frame-describtion-wrapper .price-wrapper{
+    width: 50%;
+    float: left ;
+    line-height: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #999999;
+}
+.frame-wrapper .frame-describtion-wrapper .price-wrapper{
+    color: #333333;
+    text-align: right;
+    font-size: 18px;
+}
+.frame-wrapper .frame-describtion-wrapper .quality-wrapper h4, 
+.frame-wrapper .frame-describtion-wrapper .price-wrapper h4{
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-right: 1px solid #cccccc;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+    padding: 0;
+    line-height: 18px;
+    margin: 0;
+}
+.add-frame-wrapper .frame-wrapper .frame-name{
+    border-bottom: 1px solid #f0f0f0;
+    margin: 0 0 8px 0;
+    padding: 5px 0 6px 0;
+}
+.add-frame-wrapper .frame-wrapper .frame-name span{
+    display: block;
+    font-size: 14px;
+    color:#999999;
+
+}
+.add-items-wrapper.frame-wrapper .frame-describtion-wrapper .quality-wrapper h4 span,
+.add-items-wrapper.frame-wrapper .frame-describtion-wrapper .price-wrapper h4 span{
+    display: block;
+    font-size: 14px;
+    color:#999999;
+}
+.frame-wrapper .frame-describtion-wrapper{
+    padding: 10px 8px;
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+}
+
+.frame-wrapper .frame-describtion-wrapper .price-wrapper h4{
+    border-right: none;
+}
+
+
+
+/*=====================================================================================
+************************       UPLOADZONE STYLE       *********************************
+======================================================================================*/
+.upload-wrapper .upload .dropzone{
+    padding: 0;
+    border: 0;
+    min-height: initial;
+}
+.upload-wrapper .dropzone .dz-preview .dz-image{
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    height: 134px;
+}
+.upload-wrapper .dropzone .dz-preview:hover .dz-image img {
+    -webkit-transform:none; 
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none; 
+    -webkit-filter: none;
+    filter: none;
+}
+.upload-wrapper .dropzone .dz-preview.dz-error .dz-error-message{
+    display: none;
+}
+.upload-wrapper .dropzone .dz-preview .dz-success-mark, .dropzone .dz-preview .dz-error-mark,
+.upload-wrapper .dropzone .dz-preview.dz-image-preview .dz-details{
+    display: none;
+}
+.upload-wrapper .dropzone .dz-preview,
+.upload-wrapper .upload .dropzone .dz-default {
+    margin: 0;
+}
+.upload-wrapper .upload input[type="file"]{
+    display: none;
+}
+/*==================================================================================
+**************************         MODAL STYLES        *****************************
+==================================================================================*/
+/*--  Frame Details Modal Style  --*/
+.frame-details-modal .modal-body{
+    padding: 0 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #333333;
+}
+.frame-details-modal .modal-header,.frame-details-modal .modal-footer{
+    padding: 15px 25px;
+    border: 0;
+}
+.frame-details-modal .modal-header .close{
+    margin:0 -5px 0 0;
+    opacity: 1;
+}
+.frame-details-modal h3,.frame-details-modal h4{
+    font-family: "Bebas";
+    font-size:18px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.frame-details-modal .details-wrapper h3{
+    padding: 40px 0 5px;
+}
+.frame-details-modal .details-wrapper{
+    padding-top: 40px;
+}
+.frame-details-modal label{
+    color: #333333;
+}
+.frame-details-modal .details-wrapper label{
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.add-details-modal .product-details input{
+    min-height: initial;
+}
+.add-details-modal .product-details select{
+    min-height: initial;
+    background: #ffffff;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #fdfdfd 16%, #ededed 82%, #ebebeb 100%); 
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#fdfdfd 16%,#ededed 82%,#ebebeb 100%); 
+    background: linear-gradient(to bottom,  #ffffff 0%,#fdfdfd 16%,#ededed 82%,#ebebeb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb',GradientType=0 ); 
+}
+.frame-details-modal .details-wrapper .value{
+    font-size: 18px;
+    font-weight: bold;
+}
+.frame-details-modal .modal-footer .number-wrapper{
+    font-size:18px;
+    font-family: "Roboto";
+    font-weight: bold;
+    letter-spacing: 0;
+}
+.frame-details-modal .modal-footer .number-wrapper{
+    font-weight: normal;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.frame-details-modal .modal-footer .btn{
+    border-color: #ff0033;
+    box-shadow: none;
+    min-width: 180px;
+}
+.frame-details-modal .frame-description{
+    text-align: justify;
+}
+/*--  Frame Details Craousel  --*/
+.frame-detais-carousel{
+    background-color: #fff;
+}
+.frame-detais-carousel .item img{
+    margin: 0 auto;
+}
+.frame-detais-carousel .carousel-indicators{
+    bottom: -10px
+}
+.frame-detais-carousel .carousel-control{
+    background-image: none;
+    width: initial;
+}
+.frame-detais-carousel{
+    background-color: #fff;
+    padding: 0 70px;
+}
+.frame-detais-carousel .carousel-control{
+    background-image: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    bottom: initial;
+}
+.frame-detais-carousel .carousel-control span{
+    display: inline-block;
+    color: #333;
+    font-size: 40px;
+}
+/*--  Cancel Order  --*/
+.frame-cancel-modal .modal-dialog{
+    margin: 10px auto;
+    max-width: 470px;
+}
+.frame-cancel-modal .modal-header{
+    background-color: #f2f2f2;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
+.frame-cancel-modal .description{
+    padding: 20px 0;
+    text-align: center;
+    color: #666666;
+}
+.frame-cancel-modal .description label{
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+.frame-cancel-modal .confirm{
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+}
+.frame-cancel-modal form .form-control{
+    height: 50px;
+    max-width: 310px;
+    margin: 0 auto;
+}
+/*-- Add Details  --*/
+.add-details-modal .upload{
+    padding: 20px;
+    border: 1px dashed #ddd;
+    text-align: center;
+    margin: 0 auto 30px;
+    max-width: 350px;
+}
+.add-details-modal .upload img{
+    margin: 0 auto;
+}
+.add-details-modal .upload span{
+    color: #ccc;
+}
+.instruction-wapper .instruction{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+.instruction-wapper .instruction p{
+    margin: 0;
+}
+.instruction-wapper .instruction h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+.add-details-modal .instruction-wapper img{
+    margin: 0 auto;
+    padding: 15px;
+}
+.upload-wrapper, .product-details{
+    padding: 20px 0 0;
+}
+.product-details form textarea{
+    resize: none;
+}
+.read-more, .read-more:hover{
+    font-size: 16px;
+    color: #ff0033;
+    text-decoration: none;
+}
+
+
+/*============================================================================
+                     Media Query Style For the Application
+=============================================================================*/
+
+@media(min-width:990px) and (max-width:1199px){
+
+}
+@media(min-width:768px) and (max-width:992px){
+
+}
+@media(min-width:300px) and (max-width:767px){
+    .personal-details-wrapper{
+        width: 100%;
+        margin: 45px auto 0;
+        padding-bottom: 15px;
+    }
+    .social-details-wrapper{
+        margin: 0;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .upload-photo-wrapper .upload-profile-photo{
+        border: 1px solid #fff;
+        bottom: -58px;
+        height: 115px;
+        left: 8px;
+        padding: 15px 5px 5px;
+        width: 115px;
+    }
+    .upload-photo-wrapper .upload-profile-photo p {
+        font-size: 10px;
+        margin: 8px 0;
+    }
+    .upload-photo-wrapper .upload-profile-photo i {
+        font-size: 25px;
+    }
+    .upload-photo-wrapper .upload-profile-photo .btn {
+        font-size: 11px;
+        height: 20px;
+        margin: 0 auto;
+        padding: 1px 0;
+        width: 85px;
+    }
+    /*--  Profile Page Style --*/
+    .xs-padR0{
+        padding-right: 0;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper{
+        position: initial;
+        padding: 15px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper img{
+        margin: 0 auto;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper p:nth-of-type(2){
+        text-align: justify;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper h4:nth-of-type(2){
+        text-align: left;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper .btn{
+        position: initial;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper img{
+        max-width: 120px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper p,
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper h4{
+        text-align: center;
+    }
+    .profile-wrapper .nav-tabs{
+        margin-top: 15px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper p:first-of-type{
+        line-height: initial;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper p:nth-of-type(2) br{
+        display: none;
+    }
+    .add-items-wrapper .add-frames,
+    .add-items-wrapper .frame-wrapper{
+        width: 250px;
+    }
+    .account-details-wrapper .add-item-banner-wrapper .add-item-banner-inner-wrapper h4:nth-of-type(2){
+        margin-top: 100px;
+    }
+    /*--  Modals Style  --*/
+    .frame-details-modal .modal-header .close {
+        margin: 0;
+    }
+    .frame-details-modal .modal-header, .frame-details-modal .modal-footer {
+        padding: 15px;
+    }
+    .frame-detais-carousel{
+        padding: 0 50px;
+    }
+    .frame-details-modal .modal-body {
+        padding: 0 15px;
+    }
+    .frame-details-modal .details-wrapper h3 {
+        padding: 20px 0 5px;
+    }
+    .frame-details-modal .details-wrapper{
+        padding-top: 20px;
+    }
+    .frame-details-modal .details-wrapper label {
+        margin-top: 10px;
+    }
+    .frame-details-modal .details-wrapper label {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    .frame-details-modal .details-wrapper .value {
+        font-size: 16px;
+    }
+    .frame-cancel-modal .modal-footer{
+        text-align: center;
+    }
+}
+
+/*--  Profile Page Style  --*/
+@media(min-width:600px) and (max-width:767px){
+    .account-details-wrapper .frame-wrapper .frame-name{
+        font-size: 16px;
+    }
+}
+/*--  Profile Page Style  --*/
+@media(min-width:300px) and (max-width:600px){
+    .add-items-wrapper .add-frames,
+    .add-items-wrapper .frame-wrapper{
+        width: 300px;
+        margin: 0 auto 30px;
+    }
+    .xs-custom,
+    .xs-custom{
+        width: 100%;
+    }
+    /*--  Modals Style  --*/
+    .add-details-modal .upload-wrapper .xs-custom{
+        width: 100%;
+    }
+}
+
+@media(min-width:300px) and (max-width: 550px){
+    .col-xxs-12{
+        width: 100%;
+    }
+}
+@media(min-width:300px) and (max-width:480px){
+    .upload-photo-wrapper i {
+        font-size: 75px;
+        margin-top: 30px;
+    }
+    /*--  Profile Page Style  --*/
+    .add-item-banner-wrapper
+    .add-item-banner-inner-wrapper {
+        bottom: -153px;
+    }
+    .add-item-banner-wrapper 
+    .add-item-banner-inner-wrapper h4{
+        text-align: center; 
+    }
+    .add-item-banner-wrapper 
+    .add-item-banner-inner-wrapper p{
+        text-align: center; 
+    }
+    .add-frame-wrapper .form-group input{
+        min-width: 250px;
+    }
+    .add-frame-wrapper {
+        margin: 0 auto 20px;
+        padding: 146px 0 0;
+    }
+/*    .frame-wrapper {
+        margin: 20px 0 0;  
+    }*/
+    .profile-wrapper .nav-tabs{
+        margin-top: 0;
+    }
+    .profile-wrapper .nav > li > a{
+        height: 35px;
+        line-height: 23px;
+        min-width: 100px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper{
+        position: initial;
+        padding: 50px 15px 15px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper p,
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper h4{
+        text-align: center;
+    }
+    .edit-profile{
+        margin-top: 0;
+    }
+    .profile-wrapper{
+        padding: 0;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper img{
+        max-width: 80px;
+    }
+    .add-item-banner-wrapper .add-item-banner-inner-wrapper h4{
+        font-size: 21px;
+    }
+    .add-frame-wrapper{
+        padding: 280px 0 0;
+        width: 100%;
+    }
+    .full-width-420{
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+    }
+    .add-items-wrapper .add-frames,
+    .add-items-wrapper .frame-wrapper{
+        width:100%;
+        margin: 0 auto 30px;
+    }   
+    /*--  Modals Style  --*/
+    .frame-detais-carousel {
+        padding: 0 20px;
+    }
+    .frame-detais-carousel .carousel-control .glyphicon {
+        color: #fff;
+    }
+    .frame-details-modal .modal-footer .col-xs-custom{
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+
+
+
